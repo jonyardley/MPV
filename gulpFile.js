@@ -45,7 +45,7 @@ function scripts(watch) {
 		bundler = browserify(config.js.src);
 	}
 
-	bundler.transform({global: true}, envify);
+	//bundler.transform({global: true}, envify);
 
 	rebundle = function() {
 		var stream = bundler.bundle({debug: !production});
