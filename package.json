@@ -1,0 +1,40 @@
+{
+  "name": "mpv",
+  "version": "0.0.0",
+  "description": "MIDI Performance Visualisation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "napa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://jonyardley@github.com/jonyardley/MPV"
+  },
+  "author": "Jon Yardley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonyardley/MPV/issues"
+  },
+  "homepage": "https://github.com/jonyardley/MPV",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "browserify": "^4.1.5",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^0.10.1",
+    "gulp-util": "^2.2.14",
+    "gulp-notify": "^1.3.0",
+    "nodemon": "^1.0.20",
+    "envify": "^1.2.1",
+    "connect": "^2.17.1",
+    "http": "0.0.0",
+    "gulp-livereload": "^1.5.0",
+    "browserify-shim": "^3.5.0"
+  },
+  "napa": {
+    "processing": "processing-js/processing-js"
+  },
+  "browser": {
+    "processing": "processing/processing.min.js"
+  }
+}
