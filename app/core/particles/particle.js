@@ -7,14 +7,14 @@ function Particle(opts){
 	//Public vars
 	this.x = opts.x || 0.0;
 	this.y = opts.y || 0.0;
-	this.vx = -10;
-	this.vy = 0.0;
+	this.vx = 0.0;
+	this.vy = opts.vy || -5.0;
 
 	this.r = opts.r || 10;
 	this.life = opts.life || 200;
-	this.w = 0.15;
+	this.w = opts.w || 0.1;
 	this.theta = (Math.random() * TWO_PI * 2) - TWO_PI;
-	this.drag = 0.99;
+	this.drag = opts.drag || 0.99;
 	this.opacity = 1;
 	//this.color = ops.color;
 
@@ -72,7 +72,8 @@ function Particle(opts){
 	this.draw = function(p){
 
 		p.noStroke();
-		p.fill(255,255,255, (this.opacity * 255) );
+		var opacity = this.opacity * 255;
+		p.fill(255,255,255, opacity.toFixed(4));
 		p.ellipse(this.x, this.y, this.r, this.r);
 
 

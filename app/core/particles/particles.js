@@ -15,9 +15,9 @@ function Particles(num){
 		var i = 0;
 		for(i=0;i<num;i++){
 			this.addParticle({
-				x: ((Math.random() * w*2) - w),
-				y: ((Math.random() * h*2) - h),
-				r: Math.random() * 100,
+				x: (Math.random() * w*2) - w,
+				y: h/3 * 2,
+				r: (Math.random() * 100) - 50,
 				life: Math.random() * 100
 			});
 		}

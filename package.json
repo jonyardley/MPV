@@ -26,6 +26,7 @@
     "gulp-util": "^2.2.14",
     "http": "0.0.0",
     "nodemon": "^1.0.20",
+    "underscore": "^1.6.0",
     "vinyl-source-stream": "^0.1.1",
     "watchify": "^0.10.1"
   },
